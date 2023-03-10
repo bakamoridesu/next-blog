@@ -27,6 +27,7 @@
   
   .borderCircle {
     border-radius: 9999px;
+    margin-bottom: 20px;
   }
   
   .colorInherit {
@@ -43,10 +44,77 @@
     margin: 0;
   }
   
+
   .listItem {
     margin: 0 0 1.25rem;
+    cursor: pointer;
+    transition: transform .5s;
+    padding-bottom: 20px;
+    padding-left: 20px;
   }
   
+  .listItem:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .listItem:active {
+    transform: scale(0.99);
+  }
   .lightText {
     color: #666;
+  }
+
+  .hero {
+    margin-bottom: 5px;
+  }
+
+  .cont {
+    padding: 40px 0 50px 150px;
+  }
+
+  .refrigerator {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 60%;
+  }
+
+  .link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: none;
+  }
+
+  .holoimage {
+    margin: 10px 0 70px 0;
+  }
+
+  .twoimages {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+  }
+
+  .oneimage {
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .threeimages {
+    display: flex;
+    flex-direction: row;
+    margin-left: -30px;
+  }
+
+  .desc {
+    margin-top: 30px;
+    margin-bottom: 90px;
+    font-size: 14px;
+    padding-left: 80px;
   }

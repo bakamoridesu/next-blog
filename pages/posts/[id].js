@@ -1,4 +1,5 @@
 import Head from "next/head";
+import styled from "styled-components";
 import Date from "../../components/date";
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
@@ -32,8 +33,15 @@ export default function Post({ postData }) {
       <div className={utilStyles.lightText}>
         <Date dateString={postData.date} />
       </div>
-      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      <Article dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </article>
   </Layout>
   );
 }
+
+const Article = styled.div`
+  img {
+    margin-top: 15px;
+    margin-bottom: 70px;
+  }
+`
